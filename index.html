@@ -3,15 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Painel · Fábio Garcia</title>
-<base href="/">
-<meta name="robots" content="noindex, nofollow">
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Painel Fábio">
-<link rel="icon" href="/img/icone-192.png"><link rel="apple-touch-icon" href="/img/icone-180.png">
+<title>Fábio Garcia · Massoterapeuta e Reabilitação Neuromotora</title>
+<link rel="icon" href="/icone-192.png"><link rel="apple-touch-icon" href="/icone-180.png">
 <script src="/config.js"></script>
-<script>window.FG_MODO = 'admin';</script>
 <meta name="description" content="Massagens, terapias e reabilitação neuromotora com Fábio Garcia. Agende seu horário online, no consultório ou a domicílio.">
 <meta name="theme-color" content="#0a1a35">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -386,14 +380,14 @@ footer a{color:var(--navy);font-weight:700}
 <!-- ===================== SITE ===================== -->
 <div id="site">
 <header class="topo" id="topo"><div class="wrap">
-  <a href="#inicio" class="marca" aria-label="Fábio Garcia Massoterapeuta"><img class="logo-img" src="img/logo.png" alt="Fábio Garcia"><small>Massoterapeuta</small></a>
+  <a href="#inicio" class="marca" aria-label="Fábio Garcia Massoterapeuta"><img class="logo-img" src="/logo.png" alt="Fábio Garcia"><small>Massoterapeuta</small></a>
   <nav class="menu"><a href="#servicos">Massagens e terapias</a><a href="#reabilitacao">Reabilitação</a><a href="#sobre">Sobre</a><a href="#como">Como agendar</a></nav>
   <button class="btn btn-claro" data-agendar><svg class="ico"><use href="#i-cal"/></svg>Agendar horário</button>
 </div></header>
 
 <section class="hero" id="inicio"><div class="palco" id="palco">
   <div class="fundo"></div>
-  <img class="nome-grande" src="img/logo.png" alt="" aria-hidden="true">
+  <img class="nome-grande" src="/logo.png" alt="" aria-hidden="true">
   <div class="hero-txt">
     <span class="kick">Massoterapia · Reabilitação neuromotora</span>
     <h1 class="disp">Seu corpo<span>em boas mãos.</span></h1>
@@ -430,7 +424,7 @@ footer a{color:var(--navy);font-weight:700}
 </div></section>
 
 <section class="sec" id="sobre"><div class="wrap s-grid">
-  <div class="s-foto" data-p><img src="img/fabio.webp" alt="Fábio Garcia, massoterapeuta" loading="lazy"><div class="assin"><img src="img/logo.png" alt=""><small>Massoterapeuta</small></div></div>
+  <div class="s-foto" data-p><img src="/fabio.webp" alt="Fábio Garcia, massoterapeuta" loading="lazy"><div class="assin"><img src="/logo.png" alt=""><small>Massoterapeuta</small></div></div>
   <div class="s-txt">
     <span class="kick">Quem vai te atender</span>
     <h2 class="disp">Prazer,<br><span>Fábio Garcia.</span></h2>
@@ -451,7 +445,7 @@ footer a{color:var(--navy);font-weight:700}
 </div></section>
 
 <section class="sec" style="padding-top:0"><div class="wrap"><div class="cta">
-  <img class="logo-cta" src="img/logo.png" alt="Fábio Garcia">
+  <img class="logo-cta" src="/logo.png" alt="Fábio Garcia">
   <h2 class="disp">Reserve o seu horário</h2>
   <p>A agenda é online: escolha o dia e a hora que ficam melhores para você.</p>
   <div class="acoes"><button class="btn btn-claro" data-agendar><svg class="ico"><use href="#i-cal"/></svg>Agendar agora</button></div>
@@ -481,7 +475,7 @@ const WHATS = '5547999043585';
 const wa = (num, m) => `https://wa.me/${num}?text=${encodeURIComponent(m)}`; // mensagens sem asteriscos
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const IMG = { relaxante: 'img/p-relaxante.webp', terapeutica: 'img/p-terapeutica.webp', desportiva: 'img/p-desportiva.webp', hipertensos: 'img/p-hipertensos.webp', gestantes: 'img/p-gestantes.webp', modeladora: 'img/p-modeladora.webp', redutora: 'img/p-redutora.webp', linfatica: 'img/p-linfatica.webp', facial: 'img/p-facial.webp', ventosaterapia: 'img/p-ventosa.webp', kinesio: 'img/p-kinesio.webp', acupuntura: 'img/p-acupuntura.webp' };
+const IMG = { relaxante: '/p-relaxante.webp', terapeutica: '/p-terapeutica.webp', desportiva: '/p-desportiva.webp', hipertensos: '/p-hipertensos.webp', gestantes: '/p-gestantes.webp', modeladora: '/p-modeladora.webp', redutora: '/p-redutora.webp', linfatica: '/p-linfatica.webp', facial: '/p-facial.webp', ventosaterapia: '/p-ventosa.webp', kinesio: '/p-kinesio.webp', acupuntura: '/p-acupuntura.webp' };
 const CATS = { massagem: 'Massagens', drenagem: 'Drenagens', terapia: 'Terapias', reabilitacao: 'Reabilitação' };
 const SERV_PADRAO = [
   { id: 'relaxante', cat: 'massagem', pre: 'Massagem', nome: 'Relaxante', desc: 'Toques suaves para aliviar a tensão, acalmar a mente e desacelerar.', img: 'relaxante' },
@@ -600,7 +594,7 @@ const nomeServ = (s) => s.cat === 'massagem' || s.cat === 'drenagem' ? `${s.pre}
 // ============ SITE ============
 document.querySelectorAll('.ano').forEach((e) => (e.textContent = new Date().getFullYear()));
 $$('[data-wa]').forEach((a) => { a.href = wa(WHATS, a.dataset.wa); a.target = '_blank'; a.rel = 'noopener'; });
-const marcaPost = '<div class="pl"><img src="img/logo.png" alt=""><span>Massoterapeuta</span></div>';
+const marcaPost = '<div class="pl"><img src="/logo.png" alt=""><span>Massoterapeuta</span></div>';
 $('#leque').innerHTML = [['relaxante', -1], ['kinesio', 1], ['desportiva', 0]]
   .map(([i, k]) => `<div class="post" style="--i:${k};--sobe:${k ? 8 : -6}"><img src="${IMG[i]}" alt="Post do Fábio Garcia: ${i}"></div>`).join('');
 const nomesFaixa = SERV_PADRAO.map(nomeServ);
@@ -613,7 +607,7 @@ function desenharServicos() {
   $('#abas').innerHTML = cats.map((c) => `<button data-c="${c}" class="${c === abaServ ? 'on' : ''}">${c === 'todas' ? 'Todos' : CATS[c]}</button>`).join('');
   $('#servs').innerHTML = sv.filter((s) => abaServ === 'todas' || s.cat === abaServ).map((s) => `
     <article class="serv" data-p>
-      <div class="capa">${s.img ? `<img src="${IMG[s.img]}" alt="${esc(nomeServ(s))}" loading="lazy">` : `<div class="capa-txt"><small>${esc(s.pre)}</small><b>${esc(s.nome)}</b><img src="img/logo.png" alt=""><span>Massoterapeuta</span></div>`}</div>
+      <div class="capa">${s.img ? `<img src="${IMG[s.img]}" alt="${esc(nomeServ(s))}" loading="lazy">` : `<div class="capa-txt"><small>${esc(s.pre)}</small><b>${esc(s.nome)}</b><img src="/logo.png" alt=""><span>Massoterapeuta</span></div>`}</div>
       <div class="info"><h3>${esc(nomeServ(s))}</h3><p>${esc(s.desc)}</p><div class="linha"><div class="preco">${brl(s.preco) ? `<span>${s.dur} min</span>${brl(s.preco)}` : '<span>Valor</span>Sob consulta'}</div><button class="btn btn-navy" data-agendar="${s.id}">Agendar</button></div></div>
     </article>`).join('');
   alvos = $$('[data-p]'); quadro();
@@ -764,7 +758,7 @@ function telaLogin(el, aviso = '') {
     : modoSenha === 'esqueci'
     ? `<label class="campo" style="text-align:left"><span>E-mail</span><input id="lEmail" type="email" autocomplete="username"></label><button class="btn btn-navy" style="width:100%" id="lOk">Enviar link por e-mail</button><button class="mini-btn" style="margin-top:12px;border:0" id="lVolta">Voltar</button>`
     : `<label class="campo" style="text-align:left"><span>Nova senha (mínimo 8 caracteres)</span><input id="lSenha" type="password" autocomplete="new-password"></label><button class="btn btn-navy" style="width:100%" id="lOk">Salvar nova senha</button>`;
-  el.innerHTML = `<div class="login"><form class="caixa" id="lForm" onsubmit="return false"><div class="lg"><img src="img/logo.png" alt="Fábio Garcia"></div><h2>${titulo}</h2><p>Agenda, agendamentos e clientes em um só lugar.</p>${aviso ? `<p class="erro-msg" style="margin:0 0 14px">${esc(aviso)}</p>` : ''}${corpo}</form></div>`;
+  el.innerHTML = `<div class="login"><form class="caixa" id="lForm" onsubmit="return false"><div class="lg"><img src="/logo.png" alt="Fábio Garcia"></div><h2>${titulo}</h2><p>Agenda, agendamentos e clientes em um só lugar.</p>${aviso ? `<p class="erro-msg" style="margin:0 0 14px">${esc(aviso)}</p>` : ''}${corpo}</form></div>`;
   $('#lEsq') && ($('#lEsq').onclick = () => { modoSenha = 'esqueci'; telaLogin(el); });
   $('#lVolta') && ($('#lVolta').onclick = () => { modoSenha = 'entrar'; telaLogin(el); });
   $('#lOk').onclick = async () => {
@@ -775,7 +769,7 @@ function telaLogin(el, aviso = '') {
         if (error) return telaLogin(el, 'E-mail ou senha incorretos.');
         await entrarPainel(el);
       } else if (modoSenha === 'esqueci') {
-        const { error } = await sb.auth.resetPasswordForEmail($('#lEmail').value.trim(), { redirectTo: location.origin + '/admin/' });
+        const { error } = await sb.auth.resetPasswordForEmail($('#lEmail').value.trim(), { redirectTo: location.origin + '/admin' });
         modoSenha = 'entrar'; telaLogin(el, error ? 'Não foi possível enviar agora. Tente de novo em alguns minutos.' : 'Se esse e-mail tiver acesso, chegou um link para criar uma nova senha.');
       } else {
         const s = $('#lSenha').value; if (s.length < 8) return telaLogin(el, 'A senha precisa ter pelo menos 8 caracteres.');
@@ -800,14 +794,14 @@ const b64uBytes = (s) => Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g,
 async function estadoPush() {
   if (!REMOTO) return 'Notification' in window && Notification.permission === 'granted' ? 'ok' : 'desligado';
   if (!('serviceWorker' in navigator) || !('PushManager' in window)) return iOS && !instalado() ? 'ios' : 'sem-suporte';
-  const reg = await navigator.serviceWorker.getRegistration('/admin/'); const s = reg && await reg.pushManager.getSubscription();
+  const reg = await navigator.serviceWorker.getRegistration('/'); const s = reg && await reg.pushManager.getSubscription();
   return s && Notification.permission === 'granted' ? 'ok' : 'desligado';
 }
 async function ligarPush() {
   if (!REMOTO) { try { await Notification.requestPermission(); } catch {} return desenharAdmin(); }
   try {
     if (await Notification.requestPermission() !== 'granted') return toast('Notificações bloqueadas', 'Libere as notificações deste site nas configurações do navegador.');
-    const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/admin/' }); await navigator.serviceWorker.ready;
+    const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' }); await navigator.serviceWorker.ready;
     const { data: chave } = await sb.rpc('chave_push_publica'); if (!chave) throw new Error('sem_chave');
     const sub = (await reg.pushManager.getSubscription()) || (await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64uBytes(chave) }));
     const j = sub.toJSON();
@@ -822,7 +816,7 @@ function desenharAdmin() {
   const el = $('#admin');
   if (REMOTO && !C.logado) return telaLogin(el);
   if (!REMOTO && !ler(K_LOGIN, false)) {
-    el.innerHTML = `<div class="login"><div class="caixa"><div class="lg"><img src="img/logo.png" alt="Fábio Garcia"></div><h2>Área do Fábio</h2><p>Agenda, agendamentos e clientes em um só lugar.</p>
+    el.innerHTML = `<div class="login"><div class="caixa"><div class="lg"><img src="/logo.png" alt="Fábio Garcia"></div><h2>Área do Fábio</h2><p>Agenda, agendamentos e clientes em um só lugar.</p>
       <button class="btn btn-navy" style="width:100%" id="entrar">Entrar na demonstração</button>
       <div class="demo">Prévia em modo demonstração: os dados ficam só neste navegador. Na versão publicada, o acesso é com e-mail e senha do Fábio e os dados ficam num banco seguro.</div>
       <a href="#" class="mini-btn" style="margin-top:14px">← Voltar ao site</a></div></div>`;
@@ -831,7 +825,7 @@ function desenharAdmin() {
   }
   const nv = naoVistos().length, pend = DB.ags().filter((a) => a.status === 'pendente').length;
   const NAV = [['inicio', 'Início', 'i-casa'], ['agenda', 'Agenda', 'i-cal'], ['pedidos', 'Agendamentos', 'i-lista'], ['clientes', 'Clientes', 'i-gente'], ['servicos', 'Serviços', 'i-maos'], ['horarios', 'Horários', 'i-relogio']];
-  el.innerHTML = `<div class="adm"><aside class="lado"><div class="lg"><img src="img/logo.png" alt="Fábio Garcia"><small>Painel</small></div>
+  el.innerHTML = `<div class="adm"><aside class="lado"><div class="lg"><img src="/logo.png" alt="Fábio Garcia"><small>Painel</small></div>
     ${NAV.map(([k, t, i]) => `<button class="nav-a ${A.aba === k ? 'on' : ''}" data-aba="${k}"><svg class="ico"><use href="#${i}"/></svg>${t}${k === 'pedidos' && pend ? `<span class="bdg">${pend}</span>` : ''}</button>`).join('')}
     <div class="rodape"><a class="nav-a" href="#"><svg class="ico"><use href="#i-casa"/></svg>Ver o site</a><button class="nav-a" id="sair"><svg class="ico"><use href="#i-sair"/></svg>Sair</button></div></aside>
     <main class="main" id="main"></main></div>`;
@@ -1025,7 +1019,7 @@ async function iniciar() {
     return;
   }
   $('#site').hidden = true; $('#admin').hidden = false;
-  $('#admin').innerHTML = '<div class="login"><div class="caixa"><div class="lg"><img src="img/logo.png" alt="Fábio Garcia"></div><p>Carregando...</p></div></div>';
+  $('#admin').innerHTML = '<div class="login"><div class="caixa"><div class="lg"><img src="/logo.png" alt="Fábio Garcia"></div><p>Carregando...</p></div></div>';
   try {
     await iniciarBanco();
     const recup = location.hash.includes('type=recovery');

@@ -9,8 +9,7 @@ Não precisa mexer em nenhum arquivo para publicar.
 1) GITHUB
    - github.com > New repository > nome: fabio-garcia-site > Create repository
    - Clique em "uploading an existing file"
-   - Arraste TODO o conteúdo desta pasta (index.html, admin, img, config.js,
-     sw.js, manifest.webmanifest, vercel.json) > Commit changes
+   - Arraste TODO o conteúdo desta pasta (todos os arquivos, sem pastas) > Commit changes
 
 2) VERCEL
    - vercel.com > Add New > Project > Import no repositório fabio-garcia-site
