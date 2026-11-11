@@ -1,0 +1,42 @@
+FÁBIO GARCIA · SITE + AGENDAMENTO + PAINEL
+==========================================
+Site:   https://SEU-SITE.vercel.app
+Painel: https://SEU-SITE.vercel.app/admin   (só o Fábio, com e-mail e senha)
+
+O banco (Supabase) já está criado e configurado: projeto "fabio-garcia".
+Não precisa mexer em nenhum arquivo para publicar.
+
+1) GITHUB
+   - github.com > New repository > nome: fabio-garcia-site > Create repository
+   - Clique em "uploading an existing file"
+   - Arraste TODO o conteúdo desta pasta (index.html, admin, img, config.js,
+     sw.js, manifest.webmanifest, vercel.json) > Commit changes
+
+2) VERCEL
+   - vercel.com > Add New > Project > Import no repositório fabio-garcia-site
+   - Framework Preset: Other > Deploy
+   - Abra o link gerado: o site deve aparecer. O painel fica em /admin
+
+3) SUPABASE · criar o acesso do Fábio (com o Fábio do lado)
+   - supabase.com > projeto fabio-garcia > Authentication > Users > Add user > Create new user
+   - E-mail do Fábio + a senha que ELE escolher > marque "Auto Confirm User" > Create user
+   - O Fábio entra em /admin com esse e-mail e senha. O primeiro acesso vira o dono do painel.
+
+4) SUPABASE · fechar novos cadastros (depois que o Fábio entrou)
+   - Authentication > Sign In / Providers > desligue "Allow new users to sign up" > Save
+
+5) SUPABASE · link do "Esqueci minha senha"
+   - Authentication > URL Configuration
+   - Site URL: https://SEU-SITE.vercel.app
+   - Redirect URLs > Add URL: https://SEU-SITE.vercel.app/admin/
+
+6) CELULAR DO FÁBIO · notificações de agendamento novo
+   - Android (Chrome): abrir /admin > entrar > "Ativar notificações" > Permitir
+   - iPhone (Safari): abrir /admin > Compartilhar > "Adicionar à Tela de Início"
+     > abrir pelo ícone > entrar > "Ativar notificações" > Permitir
+   - Chega uma notificação de teste confirmando.
+
+Observações
+- config.js tem só a chave PÚBLICA do banco (pode ficar no site). Nunca coloque
+  outras chaves do Supabase no site.
+- Valores, durações, horários, folgas e locais de atendimento: o Fábio muda pelo painel.
